@@ -1,0 +1,27 @@
+%div#quickSummary
+  %h3
+    %p{:id => "test" }
+      %span
+      This receit has an average
+      =(@receit.kilometers / @receit.liters).round(2)
+
+%div#preamble
+  %p 
+  =@receit.kilometers
+  kilometers
+  %p 
+  =@receit.liters
+  liters
+  
+  %div#totals
+    %span  
+
+  %div#left-container
+    = link_to 'Edit', edit_receit_path(@receit)
+    |
+    = link_to 'Destroy', @receit, :confirm => 'Are you sure?', :method => :delete
+    |
+    = link_to 'Index', receits_path
+    |
+    = link_to 'New', :new_receit
+    

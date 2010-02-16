@@ -1,0 +1,23 @@
+%div#quickSummary
+  %h3
+    %p{:id => "test" }
+      %span create a new receit
+
+%div#preamble
+  - form_for(@receit) do |f|
+    %div#error
+      =f.error_messages
+
+    %label kilometers:
+    %p= f.text_field :kilometers
+    %label liters:
+    %p= f.text_field :liters
+    %label accountdate:
+    %p= f.date_select :accountdate
+    %p= f.submit "Create"
+  
+  %div#totals
+    %span  
+
+  %div#left-container
+    = link_to 'Back', receits_path

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  kilometers: 1
+  liters: 1.5
+  accountdate: 2009-06-26
+
+two:
+  kilometers: 1
+  liters: 1.5
+  accountdate: 2009-06-26

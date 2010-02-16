@@ -1,0 +1,37 @@
+-km_total = 0
+-num_receits = 0
+-liters_total = 0
+%div#quickSummary
+  %h3
+    %p{:id => "test" }
+      %span a lst of receits
+%div#preamble
+  - @receits.each do |receit|
+    -km_total = km_total + receit.kilometers
+    -liters_total = liters_total + receit.liters
+    -num_receits = num_receits + 1
+
+    %p{:id => "r" + num_receits.to_s }
+      %span
+        %p
+        [
+        = link_to num_receits, receit
+        ] @
+        =receit.accountdate
+        %div#infos
+        The fuel on the receit was
+        =receit.liters
+        and the kilometers for this was 
+        =receit.kilometers
+        , so the average should be
+        =(receit.kilometers / receit.liters).round(2)
+
+  %div#totals
+    total kilometers:
+    =km_total
+    average total: 
+    =(km_total / liters_total).round(2)
+
+  %div#left-container
+    = link_to 'New', :new_receit
+

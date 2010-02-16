@@ -1,0 +1,23 @@
+!!! Strict
+%html{ html_attrs("en_us") }
+  %head
+    %title
+      Receits: 
+      =controller.action_name
+    %meta{ :content => "text/html; charset=utf-8" }/
+    %meta{ "http-equiv" => "content-type"}/
+    %meta{ "author" => "Wouter Roosendaal" }/
+    %meta{ "description" => "A simple application to calculate average usage of a car by the receits and kilometres"}
+    -# %link{ :href => "/stylesheets/scaffold.css", :rel => "stylesheet", :media => "screen", :type => "text/css", :charset => "utf-8" }/
+    -# %link{ :href => "/stylesheets/206.css", :rel => "stylesheet", :media => "screen", :type => "text/css", :charset => "utf-8" }/
+    -# %link{ :href => "/stylesheets/212.css", :rel => "stylesheet", :media => "screen", :type => "text/css", :charset => "utf-8" }/
+    %link{ :href => "/stylesheets/208.css", :rel => "stylesheet", :media => "screen", :type => "text/css", :charset => "utf-8" }/
+    %body{ :onload => "window.defaultStatus='css Zen Garden: The Beauty in CSS Design';", :id => "css-zen-garden" }/
+    %script{ "type" => "text/javascript" }
+    
+
+    %div#container
+      %div#intro
+        %div#pageHeader
+        = yield
+        %div#footer-container
