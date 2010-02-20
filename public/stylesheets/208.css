@@ -24,7 +24,7 @@ display:none;
 }
 
 h3 {
-height:39px;
+height:22px;
 margin:0;
 padding:0;
 }
@@ -181,8 +181,10 @@ background:url(/images/left_bg.gif) repeat-y;
 }
 
 /* side image */
+/*
 #quickSummary {background-image:url(/images/img_quicksummary.jpg);background-position:left bottom;}
 #preamble {background-image:url(/images/img_preamble.jpg);background-position:right bottom;}
+*/
 #explanation {background-image:url(/images/img_explanation.jpg);background-position:left bottom;}
 #participation {background-image:url(/images/img_participation.jpg);background-position:right bottom;}
 #benefits {background-image:url(/images/img_benefits.jpg);background-position:left bottom;}
@@ -190,7 +192,9 @@ background:url(/images/left_bg.gif) repeat-y;
 
 
 /* h3 image */
+/*
 #preamble h3 {background:url(/images/title_preamble.gif) no-repeat;}
+*/
 #explanation h3 {background:url(/images/title_explanation.gif) no-repeat;}
 #participation h3 {background:url(/images/title_participation.gif) no-repeat;}
 #benefits h3 {background:url(/images/title_benefits.gif) no-repeat;}

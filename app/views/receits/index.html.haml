@@ -2,10 +2,10 @@
 -num_receits = 0
 -liters_total = 0
 %div#quickSummary
+%div#preamble
   %h3
     %p{:id => "test" }
       %span a lst of receits
-%div#preamble
   - @receits.each do |receit|
     -km_total = km_total + receit.kilometers
     -liters_total = liters_total + receit.liters
